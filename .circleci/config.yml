@@ -7,7 +7,7 @@ jobs:
     - image: testimio/docker-cli
     steps:
       - run: mkdir -p $CIRCLE_TEST_REPORTS/testim/
-      - run: testim --token "FbRwDodQGe0fmK7kfbySfQkH4hcGCY3OXQSEhkHvo44HRGV1DL" --project "5o34e3giDMkFw4u6R2Ef" --grid "testim-ha-grid" --mode "extension" --branch "Aniket Khade" --label "Jira" --report-file $CIRCLE_TEST_REPORTS/testim/results.xml
+      - run: testim --token "FbRwDodQGe0fmK7kfbySfQkH4hcGCY3OXQSEhkHvo44HRGV1DL" --project "5o34e3giDMkFw4u6R2Ef" --grid "testim-ha-grid" --mode "extension" --branch "Aniket Khade" --label "CircleCI" --report-file $CIRCLE_TEST_REPORTS/testim/results.xml
       - store_artifacts:
           path: /tmp/circleci-test-results
       - store_test_results:
